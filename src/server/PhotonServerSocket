@@ -13,9 +13,7 @@ This file is the class for the server sockets of the photon laser game and shoul
 
 TODO:
 WRITE A BETTER DOCU
-CHANGE WHAT IS IMPORTED INSTEAD OF IMPORTING ALL OF NET AND IO LOL
 ASK ABOUT LOCALHOST AND WHAT SHOULD BE USED INSTEAD
-ASK ABOUT OVERWRITING CODES
 */
 
 import java.net.DatagramPacket;
