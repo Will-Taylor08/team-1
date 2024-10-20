@@ -35,7 +35,6 @@ public class PhotonServerSocket{
 
     PhotonServerSocket(){ //will return an exception if error instead of actual server socket class
 
-        //System.out.println("Inside photon server constructor");
         try{
         ssin = new DatagramSocket(7500);    //port it should receive data from
         ssout = new DatagramSocket(7501);    //port it should send data to
@@ -43,7 +42,6 @@ public class PhotonServerSocket{
             System.out.println("Error setting up sockets");
             se.printStackTrace();
         }
-        //System.out.println("Create new server socket");
 
         AddClientHandler();
 
@@ -107,17 +105,15 @@ public class PhotonServerSocket{
     
         public ClientHandler(DatagramSocket sin, DatagramSocket sout, PhotonServerSocket pss){ //instantiate with socket from accept in AddClient
             
-            //System.out.println("In client handler constructor");
             this.pss = pss;
             this.sin = sin;
             this.sout = sout;
     
         }
     
-        public void run(){ //this is what runs when thread is executed and gets info from client as a thread separate from main so it can run concurrently waiting without blocking main thread
+        public void run(){ //this is what runs when thread is executed and gets info from client as a thread separate from main so it can run concurrently waiting for data without blocking main thread
     
-            //System.out.println("In client handler run");
-            //recieves data from the client and sends it
+            //recieves data from the client
     
             while(keepRunning){
     
