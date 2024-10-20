@@ -58,7 +58,7 @@ public class PhotonServerSocket{
 //--------------------------------------------------------------------------------------------------------------------------------
 //Server functions for server managing handlers (server to handler interactions)
 
-    //when starting up send out equipment code
+    //use to send codes out to clients
     public void assignCode(int code){
 
         ByteBuffer buffer = ByteBuffer.allocate(4);
