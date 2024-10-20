@@ -26,22 +26,6 @@ import java.util.concurrent.*;
 import java.nio.ByteBuffer;
 
 public class PhotonServerSocket{
-    
-//Testing with main
-//--------------------------------------------------------------------------------------------------------------------------------
-
-    public static void main(String args[]){
-
-        //System.out.println("In main");
-        //System.out.println("In try block");
-        PhotonServerSocket pss = new PhotonServerSocket();
-        //System.out.println("Create photon server socket");
-        //System.out.println("Added client method has been run"); //will indicate if the program is listening in a separate thread if this function doesn't run then program is hung on the accept blocking statement
-
-    
-    }
-
-//--------------------------------------------------------------------------------------------------------------------------------
 
     private DatagramSocket ssin;
     private DatagramSocket ssout;
